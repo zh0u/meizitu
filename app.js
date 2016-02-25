@@ -34,7 +34,6 @@ function meizitu(page) {
         res.on('end', function () {
 
             var $ = cheerio.load(content);
-            //console.log(content);
 
             var currentPage = $('.current-comment-page').first().text();
 
@@ -58,12 +57,10 @@ function meizitu(page) {
                     imageUrl = $(this).attr('src');
                 }
 
-                console.log(imageUrl);
-                //downloadFile(imageUrl);
+                downloadFile(imageUrl);
             });
 
             setTimeout(meizitu, 5000, currentPage - 1);
-            //meizitu(currentPage - 1);
         });
 
         res.on('error', function (err) {
