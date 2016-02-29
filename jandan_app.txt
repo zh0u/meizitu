@@ -1,0 +1,23 @@
+GET http://i.jandan.net/?oxwlxojflwblxbsapi=jandan.get_ooxx_comments HTTP/1.1
+Host: i.jandan.net
+Connection: Keep-Alive
+User-Agent: Jandan Android App V3.0.0.0
+Accept-Encoding: gzip
+
+GET http://i.jandan.net/?oxwlxojflwblxbsapi=jandan.get_ooxx_comments&page=2 HTTP/1.1
+Host: i.jandan.net
+Connection: Keep-Alive
+User-Agent: Jandan Android App V3.0.0.0
+Accept-Encoding: gzip
+
+
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 29 Feb 2016 14:17:09 GMT
+Content-Type: application/json; charset=UTF-8
+Connection: keep-alive
+Vary: Accept-Encoding
+CACHE-KEY: page_cache:9a08d581806d05e093a81196b0d47b3a
+Content-Length: 21234
+
